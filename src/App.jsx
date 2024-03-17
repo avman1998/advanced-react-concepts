@@ -8,6 +8,7 @@ import LargeAuthorListItem from "./design-system/author/largeList";
 import SmallBookListItem from "./design-system/book/smallList";
 import LargeBookListItem from "./design-system/book/largeList";
 import RegularList from "./design-system/RegularList";
+import Modal from "./design-system/Modal";
 const Left = () => {
   return <Panel>This is left component.</Panel>;
 };
@@ -20,16 +21,16 @@ function App() {
   return (
     <>
       {/* <SplitScreen
-        leftWidth={1}
-        leftBg={"orange"}
-        rightBg={"yellow"}
-        rightWidth={3}
+        leftWidth={2}
+        leftBg={"yellow"}
+        rightBg={"pink"}
+        rightWidth={2}
       >
         <Left />
         <Right />
       </SplitScreen> */}
 
-      <RegularList
+      {/* <RegularList
         data={authors}
         sourceName={"author"}
         ListItemComponent={SmallAuthorListItem}
@@ -49,7 +50,11 @@ function App() {
         data={books}
         sourceName={"book"}
         ListItemComponent={LargeBookListItem}
-      />
+      /> */}
+      <h1>Here is the component</h1>
+      <Modal>
+        <h1>Aman is best</h1>
+      </Modal>
     </>
   );
 }
